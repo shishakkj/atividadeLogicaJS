@@ -102,14 +102,12 @@ function soma (array){
 }
 console.log(soma([1,2,3,4,5]))
 
-//9
+//9 (Só funciona com números de 0-9) 
 function segundoMaior(numeros){
-    console.log(numeros)
     for (var i = 0; i < numeros.length; i++) {
         if (typeof numeros[i] === "number"){
             numeros.sort()
             numeros.splice(i-1)
-            console.log(numeros)
         }
     return numeros[numeros.length-1]
     }
